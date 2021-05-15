@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js" defer></script>
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <aside>
+        <div class="app__logo">
+            <a href="#">
+                <h3>Admin</h3>
+            </a>
+            <button>
+                <span class="dash"></span>
+                <span class="dash"></span>
+                <span class="dash"></span>
+            </button>
+        </div>
+        <div class="container">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="questions.html">Test</a>
+                </li>
+                <li>
+                    <a href="forms.html">Table</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <div class="container">
+            <div class="header">
+                <nav class="d-flex align-items-center">
+                    <div class="nav-search">
+                        <form action="">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search..">
+                        </form>
+                    </div>
+                    <ul class="nav-items list-unstyled">
+                        <li class="nav-item d-inline-block active">
+                            <a class="nav-link" href="#">Add Quiz</a>
+                        </li>
+                        <li class="nav-item d-inline-block">
+                            <a class="nav-link" href="questions.html">Test</a>
+                        </li>
+                        <li class="nav-item d-inline-block">
+                            <a class="nav-link" href="forms.html">Table</a>
+                        </li>
+                    </ul>
+                    <div class="nav-profile">
+                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                            <img src="img/3.png" alt="admin">
+                            <i class="fas fa-angle-down ml-2 opacity-8"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-cog mr-2"></i>
+                                    Setting
+                                </a>
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-sign-out-alt mr-2"></i>
+                                    Logout
+                                </a>
+                            </li>
+                          </ul>
+                    </div>
+                </nav>
+            </div>
+            <section class="questions">
+                <h2 class="text-center">Add A Question</h2>
+                <form method="POST">
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 question">
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg" placeholder="type your Question...">
+                            </div> 
+                        </div>
+
+                        <!-- answers-->
+                        <!-- 1st answer-->
+                        <div class="col-md-10 option mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-1">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="answer" value="option1">
+                                    </div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control answer" placeholder="Write an answer">
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <i class="fas fa-trash-alt fa-2x btn remove-answer"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2nd answer-->
+                        <div class="col-md-10 option mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-1">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="answer" value="option2">
+                                    </div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control answer" placeholder="Write an answer">
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <i class="fas fa-trash-alt fa-2x btn remove-answer"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3rd answer-->
+                        <div class="col-md-10 option mb-3">
+                            <div class="row align-items-center">
+                                <div class="col-1">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="answer" value="option3">
+                                    </div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control answer" placeholder="Write an answer">
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <i class="fas fa-trash-alt fa-2x btn remove-answer"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4th answer-->
+                        <div class="col-md-10 option mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-1">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="answer" value="option4">
+                                    </div>
+                                </div>
+                                <div class="col-10">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control answer" placeholder="Write an answer">
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <i class="fas fa-trash-alt fa-2x btn remove-answer"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-10">
+                            <input type="submit" class="btn btn-lg btn-primary d-block mx-auto" value="Add Question">
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
